@@ -1,0 +1,33 @@
+.DS_Store
+
+.circleci
+.github
+.husky
+
+.editorconfig
+.eslintignore
+.eslintrc
+
+babel.config.cjs
+
+.gitattributes
+.gitignore
+
+# User-defined NPM configuration
+.npmrc
+
+# User-defined NVM configuration
+.nvmrc
+
+# Deps
+.depsrc
+
+# Hooks
+.husky/hooks
+
+# Typescript
+tsconfig.json
+jsconfig.json
+
+# Examples
+examples

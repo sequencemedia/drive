@@ -17,5 +17,5 @@ node_modules
 .husky/hooks
 
 # Google
-credentials.json
+key-file.json
 user-refresh-client.json
