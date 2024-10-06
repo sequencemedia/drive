@@ -1,0 +1,30 @@
+{
+  "name": "@sequencemedia/drive",
+  "version": "0.0.0",
+  "main": "./src/index.mjs",
+  "type": "module",
+  "author": {
+    "name": "Jonathan Perry for Sequence Media Limited",
+    "email": "sequencemedia@sequencemedia.net",
+    "url": "https://sequencemedia.net"
+  },
+  "license": "ISC",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "dependencies": {
+    "@google-cloud/local-auth": "^2.1.0",
+    "debug": "^4.3.7",
+    "googleapis": "^105.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/eslint-parser": "^7.25.1",
+    "@babel/preset-env": "^7.25.4",
+    "@sequencemedia/eslint-config-standard": "^0.0.72",
+    "core-js": "^3.38.1",
+    "eslint": "^9.11.1",
+    "globals": "^15.10.0"
+  }
+}
