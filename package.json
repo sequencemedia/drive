@@ -26,5 +26,8 @@
     "core-js": "^3.38.1",
     "eslint": "^9.11.1",
     "globals": "^15.10.0"
+  },
+  "imports": {
+    "#common/*": "./src/common/*.mjs"
   }
 }

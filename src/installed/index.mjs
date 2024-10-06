@@ -14,9 +14,11 @@ import {
   google
 } from 'googleapis'
 
-import getCredentials, {
-  CREDENTIALS_PATH
-} from './getCredentials.mjs'
+import getKeyFile, {
+  getInstalled
+} from '#common/getKeyFile'
+
+const KEY_FILE_PATH = './src/installed/key-file.json'
 
 // If modifying these scopes, delete user-refresh-client.json.
 const SCOPES = [
@@ -36,7 +38,9 @@ const USER_REFRESH_CLIENT_PATH = './user-refresh-client.json'
 async function getUserRefreshClient () {
   try {
     const fileData = await readFile(USER_REFRESH_CLIENT_PATH)
-    return JSON.parse(fileData)
+    return (
+      JSON.parse(fileData)
+    )
   } catch {
     return null
   }
@@ -98,14 +102,18 @@ async function toUserRefreshClient (credentials, authClient) {
  */
 async function authorize () {
   const userRefreshClient = await getUserRefreshClient()
-  if (userRefreshClient) return toAuthClient(userRefreshClient)
+  if (userRefreshClient) {
+    return (
+      toAuthClient(userRefreshClient)
+    )
+  }
 
   const authClient = await authenticate({
     scopes: SCOPES,
-    keyfilePath: CREDENTIALS_PATH
+    keyfilePath: KEY_FILE_PATH
   })
 
-  await setUserRefreshClient(await toUserRefreshClient(await getCredentials(), authClient))
+  await setUserRefreshClient(await toUserRefreshClient(getInstalled(await getKeyFile(KEY_FILE_PATH)), authClient))
 
   return authClient
 }
