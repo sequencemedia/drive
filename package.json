@@ -17,19 +17,19 @@
   },
   "dependencies": {
     "debug": "^4.3.7",
-    "googleapis": "^105.0.0",
+    "googleapis": "^144.0.0",
     "nconf": "^0.12.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.25.2",
+    "@babel/core": "^7.26.0",
     "@babel/eslint-parser": "^7.25.9",
-    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-env": "^7.26.0",
     "@types/debug": "^4.1.12",
     "@types/nconf": "^0.10.7",
     "@types/node": "^22.10.1",
     "@typescript-eslint/eslint-plugin": "7.18.0",
     "@typescript-eslint/parser": "7.18.0",
-    "core-js": "^3.38.1",
+    "core-js": "^3.39.0",
     "eslint": "8.57.1",
     "eslint-config-love": "47.0.0",
     "eslint-config-standard": "^17.1.0"
