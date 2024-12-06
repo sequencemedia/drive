@@ -8,8 +8,6 @@
 .eslintignore
 .eslintrc
 
-babel.config.cjs
-
 .gitattributes
 .gitignore
 
