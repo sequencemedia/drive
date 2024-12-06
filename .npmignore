@@ -13,6 +13,11 @@ babel.config.cjs
 .gitattributes
 .gitignore
 
+# NPM
+
+*.json
+!package.json
+
 # User-defined NPM configuration
 .npmrc
 
@@ -31,3 +36,13 @@ jsconfig.json
 
 # Examples
 examples
+
+# Google
+key-file.json
+user-refresh-client.json
+
+# ESLint
+eslint.config.*
+
+# Babel
+babel.config.*

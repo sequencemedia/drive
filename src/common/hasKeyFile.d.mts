@@ -1,3 +1,8 @@
+import {
+  KEY_FILE_JSON,
+  KEY_FILE_PATH
+} from '#common/config'
+
 /**
  * @param {string | undefined | null} keyFileJson
  * @param {string | undefined | null} keyFilePath
@@ -5,5 +10,7 @@
  */
 export default function hasKeyFile (keyFileJson: string | undefined | null, keyFilePath: string | undefined | null): Promise<boolean>
 
-export const KEY_FILE_JSON: string | undefined
-export const KEY_FILE_PATH: string | undefined
+export {
+  KEY_FILE_JSON,
+  KEY_FILE_PATH
+}
