@@ -16,7 +16,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "debug": "^4.3.7",
+    "debug": "^4.4.0",
     "googleapis": "^144.0.0",
     "nconf": "^0.12.1"
   },
