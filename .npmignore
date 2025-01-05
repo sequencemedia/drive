@@ -1,0 +1,46 @@
+.DS_Store
+
+.circleci
+.github
+.husky
+
+.editorconfig
+.eslintignore
+.eslintrc
+
+.gitattributes
+.gitignore
+
+# NPM
+
+*.json
+!package.json
+
+# User-defined NPM configuration
+.npmrc
+
+# User-defined NVM configuration
+.nvmrc
+
+# Deps
+.depsrc
+
+# Hooks
+.husky/hooks
+
+# Typescript
+tsconfig.json
+jsconfig.json
+
+# Examples
+examples
+
+# Google
+key-file.json
+user-refresh-client.json
+
+# ESLint
+eslint.config.*
+
+# Babel
+babel.config.*

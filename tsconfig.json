@@ -2,15 +2,20 @@
   "compilerOptions": {
     "module": "NodeNext",
     "target": "ESNext",
-    "moduleResolution": "NodeNext",
+    "allowJs": true,
+    "checkJs": false,
+    "allowSyntheticDefaultImports": true,
     "noEmit": true,
     "strict": true,
     "isolatedModules": true,
     "noImplicitAny": true,
-    "allowImportingTsExtensions": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationMap": true,
+    "strictNullChecks": true,
     "baseUrl": "."
   },
   "include": [
-    "src/*"
+    "src/**/*"
   ]
 }

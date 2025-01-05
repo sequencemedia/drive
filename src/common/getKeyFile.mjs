@@ -1,24 +1,39 @@
 import {
   readFile
-} from 'fs/promises'
+} from 'node:fs/promises'
 
-export const KEY_FILE_PATH = './key-file.json'
+import {
+  KEY_FILE_JSON,
+  KEY_FILE_PATH
+} from '#common/config'
 
-export function getInstalled ({
-  installed = null
-}) {
-  return installed
+import hasKeyFileJson from './hasKeyFileJson.mjs'
+import hasKeyFilePath from './hasKeyFilePath.mjs'
+
+export {
+  KEY_FILE_JSON,
+  KEY_FILE_PATH
 }
 
-export function getWeb ({
-  web = null
-}) {
-  return web
-}
+/**
+ * @param {string | undefined | null} keyFileJson
+ * @param {string | undefined | null} keyFilePath
+ * @returns {Promise<Record<PropertyKey, string | undefined>>}
+ */
+export default async function getKeyFile (keyFileJson, keyFilePath) {
+  if (hasKeyFileJson(keyFileJson)) {
+    return (
+      JSON.parse(
+        keyFileJson
+      )
+    )
+  }
 
-export default async function getKeyFile (keyfilePath = KEY_FILE_PATH) {
-  const fileData = await readFile(keyfilePath)
-  return (
-    JSON.parse(fileData)
-  )
+  if (await hasKeyFilePath(keyFilePath)) {
+    return (
+      JSON.parse(
+        await readFile(keyFilePath)
+      )
+    )
+  }
 }
