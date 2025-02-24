@@ -4,15 +4,9 @@
     "target": "ESNext",
     "allowJs": true,
     "checkJs": false,
-    "allowSyntheticDefaultImports": true,
     "noEmit": true,
     "strict": true,
     "isolatedModules": true,
-    "noImplicitAny": true,
-    "declaration": true,
-    "emitDeclarationOnly": true,
-    "declarationMap": true,
-    "strictNullChecks": true,
     "baseUrl": "."
   },
   "include": [
