@@ -5,5 +5,5 @@ declare global {
 
   type FileType = DriveV3.Schema$File
 
-  type FileListType = Array<{ id: string, name: string }>
+  type FileListType = Array<{ id: string; name: string }>
 }

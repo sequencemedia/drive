@@ -5,7 +5,7 @@ import typescript from '@sequencemedia/eslint-config-typescript/merge'
 export default [
   ...standard({
     files: [
-      '**/*.{mjs,cjs}'
+      '**/*.{mjs,cjs,mts,cts}'
     ],
     languageOptions: {
       globals: {
