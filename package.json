@@ -18,7 +18,7 @@
   "dependencies": {
     "debug": "^4.4.0",
     "googleapis": "^148.0.0",
-    "nconf": "^0.12.1"
+    "nconf": "^0.13.0"
   },
   "devDependencies": {
     "@sequencemedia/eslint-config-standard": "^0.2.48",
