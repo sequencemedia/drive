@@ -1,6 +1,6 @@
 /**
- * @typedef {import('google-auth-library').OAuth2Client} OAuth2Client
- * @typedef {import('google-auth-library').JWTInput} UserRefreshClient
+ *  @typedef {import('google-auth-library').OAuth2Client} OAuth2Client
+ *  @typedef {import('google-auth-library').JWTInput} UserRefreshClient
  */
 
 import {
@@ -31,9 +31,9 @@ const SCOPES = [
 const USER_REFRESH_CLIENT_PATH = './user-refresh-client.json'
 
 /**
- * Deserialises `UserRefreshClient` from a file
+ *  Deserialises `UserRefreshClient` from a file
  *
- * @return {Promise<UserRefreshClient | null>}
+ *  @return {Promise<UserRefreshClient | null>}
  */
 async function getUserRefreshClient () {
   try {
@@ -47,10 +47,10 @@ async function getUserRefreshClient () {
 }
 
 /**
- * Serializes `UserRefreshClient` to a file
+ *  Serializes `UserRefreshClient` to a file
  *
- * @param {UserRefreshClient} userRefreshClient
- * @return {Promise<void>}
+ *  @param {UserRefreshClient} userRefreshClient
+ *  @return {Promise<void>}
  */
 async function setUserRefreshClient (userRefreshClient) {
   const fileData = JSON.stringify(userRefreshClient)
@@ -58,10 +58,10 @@ async function setUserRefreshClient (userRefreshClient) {
 }
 
 /**
- * Transforms `UserRefreshClient` to `OAuth2Client`
+ *  Transforms `UserRefreshClient` to `OAuth2Client`
  *
- * @param {UserRefreshClient} userRefreshClient
- * @returns {OAuth2Client}
+ *  @param {UserRefreshClient} userRefreshClient
+ *  @returns {OAuth2Client}
  */
 function toAuthClient (userRefreshClient) {
   return (
@@ -70,10 +70,10 @@ function toAuthClient (userRefreshClient) {
 }
 
 /**
- * Transforms `OAuth2Client` to `UserRefreshClient`
+ *  Transforms `OAuth2Client` to `UserRefreshClient`
  *
- * @param {OAuth2Client} authClient
- * @return {Promise<UserRefreshClient>}
+ *  @param {OAuth2Client} authClient
+ *  @return {Promise<UserRefreshClient>}
  */
 async function toUserRefreshClient (credentials, authClient) {
   const {
@@ -96,9 +96,9 @@ async function toUserRefreshClient (credentials, authClient) {
 }
 
 /**
- * Load or request or authorization to call APIs.
+ *  Load or request or authorization to call APIs.
  *
- * @return {OAuth2Client}
+ *  @return {OAuth2Client}
  */
 async function authorize () {
   const userRefreshClient = await getUserRefreshClient()
@@ -119,9 +119,9 @@ async function authorize () {
 }
 
 /**
- * Lists the names and IDs of up to 10 files.
+ *  Lists the names and IDs of up to 10 files.
  *
- * @param {OAuth2Client} authClient An authorized OAuth2 client.
+ *  @param {OAuth2Client} authClient An authorized OAuth2 client.
  */
 async function listFiles (authClient) {
   try {

@@ -4,9 +4,9 @@ import {
 } from '#common/config'
 
 /**
- * @param {string | undefined | null} keyFileJson
- * @param {string | undefined | null} keyFilePath
- * @returns {Promise<boolean>}
+ *  @param {string | undefined | null} keyFileJson
+ *  @param {string | undefined | null} keyFilePath
+ *  @returns {Promise<boolean>}
  */
 export default function hasKeyFile (keyFileJson: string | undefined | null, keyFilePath: string | undefined | null): Promise<boolean>
 

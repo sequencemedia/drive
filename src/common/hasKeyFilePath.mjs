@@ -4,8 +4,8 @@ import {
 } from 'node:fs/promises'
 
 /**
- * @param {string | undefined | null} keyFilePath
- * @returns {Promise<boolean>}
+ *  @param {string | undefined | null} keyFilePath
+ *  @returns {Promise<boolean>}
  */
 export default async function hasKeyFilePath (keyFilePath = null) {
   try {

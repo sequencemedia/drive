@@ -12,9 +12,9 @@ export {
 }
 
 /**
- * @param {string | undefined | null} keyFileJson
- * @param {string | undefined | null} keyFilePath
- * @returns {Promise<boolean>}
+ *  @param {string | undefined | null} keyFileJson
+ *  @param {string | undefined | null} keyFilePath
+ *  @returns {Promise<boolean>}
  */
 export default async function hasKeyFile (keyFileJson, keyFilePath) {
   try {

@@ -1,5 +1,5 @@
 /**
- * @typedef {import('google-auth-library').OAuth2Client} OAuth2Client
+ *  @typedef {import('google-auth-library').OAuth2Client} OAuth2Client
  */
 
 import {
@@ -19,7 +19,7 @@ const SCOPES = [
 ]
 
 /**
- * Authorize with service account and get jwt client
+ *  Authorize with service account and get jwt client
  *
  */
 async function authorize () {
@@ -41,11 +41,11 @@ async function authorize () {
 }
 
 /**
- * Create a JSON file in Google Drive
+ *  Create a JSON file in Google Drive
  *
- * @param {string} id JSON file identifier
- * @param {string} body JSON file contents
- * @param {OAuth2Client} authClient An authorized OAuth2 client.
+ *  @param {string} id JSON file identifier
+ *  @param {string} body JSON file contents
+ *  @param {OAuth2Client} authClient An authorized OAuth2 client.
  */
 async function createJsonFile (id, body, authClient) {
   try {

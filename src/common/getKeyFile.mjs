@@ -16,9 +16,9 @@ export {
 }
 
 /**
- * @param {string | undefined | null} keyFileJson
- * @param {string | undefined | null} keyFilePath
- * @returns {Promise<Record<PropertyKey, string | undefined>>}
+ *  @param {string | undefined | null} keyFileJson
+ *  @param {string | undefined | null} keyFilePath
+ *  @returns {Promise<Record<PropertyKey, string | undefined>>}
  */
 export default async function getKeyFile (keyFileJson, keyFilePath) {
   if (hasKeyFileJson(keyFileJson)) {

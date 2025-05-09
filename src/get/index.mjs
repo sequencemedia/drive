@@ -1,7 +1,7 @@
 /**
- * @typedef {import('google-auth-library').OAuth2Client} AuthClient
- * @typedef {import('googleapis').drive_v3 } DriveV3
- * @typedef {DriveV3.Schema$File} File
+ *  @typedef {import('google-auth-library').OAuth2Client} AuthClient
+ *  @typedef {import('googleapis').drive_v3 } DriveV3
+ *  @typedef {DriveV3.Schema$File} File
  */
 
 import debug from 'debug'
@@ -32,11 +32,11 @@ const error = debug('@sequencemedia/drive/get:error')
 log('`@sequencemedia/drive` is awake')
 
 /**
- * Get a JSON file from Google Drive
+ *  Get a JSON file from Google Drive
  *
- * @param {string} fileId JSON file identifier
- * @param {AuthClient} authClient An authorised OAuth2 client
- * @returns {File}
+ *  @param {string} fileId JSON file identifier
+ *  @param {AuthClient} authClient An authorised OAuth2 client
+ *  @returns {File}
  */
 async function getJsonFile (fileId, authClient) {
   try {
@@ -61,12 +61,12 @@ async function getJsonFile (fileId, authClient) {
 }
 
 /**
- * Get a JSON file from Google Drive
+ *  Get a JSON file from Google Drive
  *
- * @param {string} fileId JSON file identifier
- * @param {Record<PropertyKey, string | undefined>} keyFile Authorisation
- * @param {string[]} scopes Authorisation scopes
- * @returns {Promise<File>}
+ *  @param {string} fileId JSON file identifier
+ *  @param {Record<PropertyKey, string | undefined>} keyFile Authorisation
+ *  @param {string[]} scopes Authorisation scopes
+ *  @returns {Promise<File>}
  */
 export default async function getFromDrive (fileId, keyFile, scopes = SCOPES) {
   return (

@@ -1,6 +1,6 @@
 /**
- * @param {string | undefined | null} keyFileJson
- * @returns {boolean}
+ *  @param {string | undefined | null} keyFileJson
+ *  @returns {boolean}
  */
 export default function hasKeyFileJson (keyFileJson = null) {
   try {

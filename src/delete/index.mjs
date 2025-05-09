@@ -1,5 +1,5 @@
 /**
- * @typedef {import('google-auth-library').OAuth2Client} AuthClient
+ *  @typedef {import('google-auth-library').OAuth2Client} AuthClient
  */
 
 import debug from 'debug'
@@ -30,11 +30,11 @@ const error = debug('@sequencemedia/drive/delete:error')
 log('`@sequencemedia/drive` is awake')
 
 /**
- * Delete a JSON file from Google Drive
+ *  Delete a JSON file from Google Drive
  *
- * @param {string} fileId JSON file identifier
- * @param {AuthClient} authClient An authorised OAuth2 client
- * @returns {Promise<void>}
+ *  @param {string} fileId JSON file identifier
+ *  @param {AuthClient} authClient An authorised OAuth2 client
+ *  @returns {Promise<void>}
  */
 async function deleteJsonFile (fileId, authClient) {
   try {
@@ -56,11 +56,11 @@ async function deleteJsonFile (fileId, authClient) {
 }
 
 /**
- * Delete a JSON file from Google Drive
+ *  Delete a JSON file from Google Drive
  *
- * @param {string} fileId JSON file identifier
- * @param {Record<PropertyKey, string | undefined>} keyFile An authorised OAuth2 client
- * @returns {Promise<void>}
+ *  @param {string} fileId JSON file identifier
+ *  @param {Record<PropertyKey, string | undefined>} keyFile An authorised OAuth2 client
+ *  @returns {Promise<void>}
  */
 export default async function deleteFromDrive (fileId, keyFile, scopes = SCOPES) {
   return (

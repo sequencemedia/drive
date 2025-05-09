@@ -1,5 +1,5 @@
 /**
- * @typedef {import('google-auth-library').OAuth2Client} AuthClient
+ *  @typedef {import('google-auth-library').OAuth2Client} AuthClient
  */
 
 import debug from 'debug'
@@ -30,11 +30,11 @@ const error = debug('@sequencemedia/drive/list:error')
 log('`@sequencemedia/drive` is awake')
 
 /**
- * Get a list of the JSON files from Google Drive
+ *  Get a list of the JSON files from Google Drive
  *
- * @param {string} driveId Drive identifier
- * @param {AuthClient} authClient An authorised OAuth2 client
- * @returns {Promise<{id: string, name: string}[]>}
+ *  @param {string} driveId Drive identifier
+ *  @param {AuthClient} authClient An authorised OAuth2 client
+ *  @returns {Promise<{id: string, name: string}[]>}
  */
 async function getJsonFileList (driveId, authClient) {
   try {
@@ -65,12 +65,12 @@ async function getJsonFileList (driveId, authClient) {
 }
 
 /**
- * Get a list of the JSON files from Google Drive
+ *  Get a list of the JSON files from Google Drive
  *
- * @param {string} driveId Drive identifier
- * @param {Record<PropertyKey, string | undefined>} keyFile Authorisation
- * @param {string[]} scopes Authorisation scopes
- * @returns {Promise<Array<{id: string, name: string}>>}
+ *  @param {string} driveId Drive identifier
+ *  @param {Record<PropertyKey, string | undefined>} keyFile Authorisation
+ *  @param {string[]} scopes Authorisation scopes
+ *  @returns {Promise<Array<{id: string, name: string}>>}
  */
 export default async function getListFromDrive (driveId, keyFile, scopes = SCOPES) {
   return (

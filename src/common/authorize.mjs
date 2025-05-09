@@ -1,5 +1,5 @@
 /**
- * @typedef {import('google-auth-library').JWT} JWT
+ *  @typedef {import('google-auth-library').JWT} JWT
  */
 
 import {
@@ -19,11 +19,11 @@ export function getPrivateKey ({
 }
 
 /**
- * Authorise using a Service Account (and return a JWT client)
+ *  Authorise using a Service Account (and return a JWT client)
  *
- * @param {Record<PropertyKey, string | undefined>} keyFile
- * @param {string[]} scopes
- * @returns {JWT}
+ *  @param {Record<PropertyKey, string | undefined>} keyFile
+ *  @param {string[]} scopes
+ *  @returns {JWT}
  */
 export default async function authorize (keyFile, scopes = []) {
   if (!keyFile) throw new Error('A key file is required')

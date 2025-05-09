@@ -1,7 +1,7 @@
 /**
- * @typedef {import('google-auth-library').OAuth2Client} AuthClient
- * @typedef {import('googleapis').drive_v3 } DriveV3
- * @typedef {DriveV3.Schema$File} File
+ *  @typedef {import('google-auth-library').OAuth2Client} AuthClient
+ *  @typedef {import('googleapis').drive_v3 } DriveV3
+ *  @typedef {DriveV3.Schema$File} File
  */
 
 import debug from 'debug'
@@ -36,13 +36,13 @@ const error = debug('@sequencemedia/drive/create:error')
 log('`@sequencemedia/drive` is awake')
 
 /**
- * Create a JSON file in Google Drive
+ *  Create a JSON file in Google Drive
  *
- * @param {string} driveId Drive identifier
- * @param {string} fileName JSON file identifier
- * @param {string} fileData JSON file contents
- * @param {AuthClient} authClient An authorised OAuth2 client
- * @returns {File}
+ *  @param {string} driveId Drive identifier
+ *  @param {string} fileName JSON file identifier
+ *  @param {string} fileData JSON file contents
+ *  @param {AuthClient} authClient An authorised OAuth2 client
+ *  @returns {File}
  */
 async function createJsonFile (driveId, fileName, fileData, authClient) {
   try {
@@ -78,14 +78,14 @@ async function createJsonFile (driveId, fileName, fileData, authClient) {
 }
 
 /**
- * Create a JSON file in Google Drive
+ *  Create a JSON file in Google Drive
  *
- * @param {string} driveId Drive identifier
- * @param {string} fileName JSON file name
- * @param {Buffer} fileData JSON file data
- * @param {Record<PropertyKey, string | undefined>} keyFile Authorisation
- * @param {string[]} scopes Authorisation scopes
- * @returns {File}
+ *  @param {string} driveId Drive identifier
+ *  @param {string} fileName JSON file name
+ *  @param {Buffer} fileData JSON file data
+ *  @param {Record<PropertyKey, string | undefined>} keyFile Authorisation
+ *  @param {string[]} scopes Authorisation scopes
+ *  @returns {File}
  */
 export default async function createInDrive (driveId, fileName, fileData, keyFile, scopes = SCOPES) {
   return (

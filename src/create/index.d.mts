@@ -1,5 +1,5 @@
 /**
- * Create a JSON file in Google Drive
+ *  Create a JSON file in Google Drive
  */
 export default function createInDrive (
   driveId: string,
