@@ -1,6 +1,6 @@
 {
   "name": "@sequencemedia/drive",
-  "version": "0.0.128",
+  "version": "0.0.129",
   "main": "./src/index.mjs",
   "type": "module",
   "types": "./src/index.d.mts",
