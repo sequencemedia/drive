@@ -17,15 +17,15 @@
   },
   "dependencies": {
     "debug": "^4.4.3",
-    "googleapis": "^165.0.0",
+    "googleapis": "^166.0.0",
     "nconf": "^0.13.0"
   },
   "devDependencies": {
-    "@sequencemedia/eslint-config-standard": "^0.2.102",
-    "@sequencemedia/eslint-config-typescript": "^0.1.175",
+    "@sequencemedia/eslint-config-standard": "^0.2.106",
+    "@sequencemedia/eslint-config-typescript": "^0.1.181",
     "@types/debug": "^4.1.12",
     "@types/nconf": "^0.10.7",
-    "@types/node": "^24.10.0",
+    "@types/node": "^24.10.1",
     "eslint": "9.38.0",
     "globals": "^16.5.0",
     "husky": "^9.1.7"
