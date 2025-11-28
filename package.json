@@ -21,8 +21,8 @@
     "nconf": "^0.13.0"
   },
   "devDependencies": {
-    "@sequencemedia/eslint-config-standard": "^0.2.106",
-    "@sequencemedia/eslint-config-typescript": "^0.1.181",
+    "@sequencemedia/eslint-config-standard": "^0.2.107",
+    "@sequencemedia/eslint-config-typescript": "^0.1.182",
     "@types/debug": "^4.1.12",
     "@types/nconf": "^0.10.7",
     "@types/node": "^24.10.1",
