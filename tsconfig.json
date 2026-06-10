@@ -6,7 +6,6 @@
     "checkJs": false,
     "noEmit": true,
     "strict": true,
-    "isolatedModules": true,
-    "baseUrl": "."
+    "isolatedModules": true
   }
 }
